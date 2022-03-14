@@ -52,6 +52,11 @@ h2 {
   margin: 0 0 .3em 0;
 }
 
+h3 {
+  margin: .5em 0 0 0;
+  font-weight: 400;
+  font-size: .9em;
+}
 
 /********/
 /* NAV  */
@@ -62,18 +67,17 @@ nav {
   width: 100%;
   justify-content: center;
   padding: 1em 1.5em;
+  position: relative;
 }
 
 nav button {
-  margin-right: auto;
+  position: absolute;
+  left: 1.8em;
+  top: 1.6em;
 }
 
 nav button img {
   width: 2em;
-}
-
-nav a {
-  margin-right: auto;
 }
 
 nav a img {
@@ -120,7 +124,7 @@ form input::placeholder {
   color: var(--whiteGrey);
 }
 
-/*  ARTICLE  */
+/*  ARTICLE's  */
 /*************/
 
 article {
@@ -129,7 +133,7 @@ article {
 
 .discover ul {
   list-style: none;
-  padding: 0;
+  padding: 0 0 .5em 0;
   white-space: nowrap;
   display: flex;
   width: 100%;
@@ -138,11 +142,12 @@ article {
 }
 
 .discover li {
-  flex: 0 0 6em;
+  flex: 0 0 6.2em;
 }
 
 .discover .book_img {
   height: 9em;
-  width: 6em;
+  width: 6.2em;
   background-color: var(--lightGrey);
+  border-radius: 1em;
 }

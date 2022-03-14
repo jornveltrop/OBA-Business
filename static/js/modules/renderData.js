@@ -1,4 +1,4 @@
-const main = document.querySelector('main');
+const ul = document.querySelector('.discover ul');
 
 // render data
 export function renderData(data) {
@@ -6,14 +6,11 @@ export function renderData(data) {
     console.dir(results);
     results.forEach((item, i) => {
       const html = `
-              <article>
-                <h2>${item.titles[0]}</h2>
-                <p>${item.summaries ? item.summaries[0] : 'Geen samenvatting'}</p>
-                <img src="${
-                  item.coverimages ? item.coverimages[1] : 'Geen samenvatting'
-                }">
-              </article>
+            <li>
+                <div class="book_img" style="background-image: url('${item.coverimages}');"></div>
+                <h3>${item.titles}</h3>
+            </li>
             `;
-      main.insertAdjacentHTML('beforeend', html);
+      ul.insertAdjacentHTML('beforeend', html);
     });
 }  
