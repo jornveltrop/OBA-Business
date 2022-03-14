@@ -1,3 +1,7 @@
+/********************/
+/* ALGEMENE STIJLEN */
+/********************/
+
 :root {
   --white: #fff;
   --blue: #0064C8;
@@ -22,6 +26,41 @@ body {
   color: var(--white);
   background-color: var(--darkGrey);
   font-family: 'Fira Sans', sans-serif;
+}
+
+button {
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/********************/
+/* SITE STIJLEN */
+/********************/
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 1em 1.5em;
+}
+
+nav button {
+  margin-right: auto;
+}
+
+nav button img {
+  width: 2em;
+}
+
+nav a {
+  margin-right: auto;
+}
+
+nav a img {
+  height: 1.7em;
 }
 
 main {
