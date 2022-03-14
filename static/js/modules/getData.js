@@ -2,8 +2,8 @@
 const cors = 'https://cors-anywhere.herokuapp.com/';
 const endpoint = 'https://zoeken.oba.nl/api/v1/search/?q=';
 const query = 'ondernemen';
-const key = 'd7519ea81ad4e06ab5e5dac46ddeb63a';
-const secret = '274658a302d1cfe874e73aed9d6ccef5';
+const key = 'f60b69054b02f50180d9c088e06270ea';
+const secret = '34dd0c6e69370e1b0d2b06fb8343c17f';
 const detail = 'Default';
 const url = `${cors}${endpoint}${query}&authorization=${key}&detaillevel=${detail}&output=json`;
 console.log(url);
