@@ -4,7 +4,7 @@ const ul = document.querySelector('.discover ul');
 export function renderData(data) {
     const results = data.results;
     console.dir(results);
-    results.forEach((item, i) => {
+    results.forEach((item) => {
       const html = `
             <li>
                 <div class="book_img" style="background-image: url('${item.coverimages}');"></div>
