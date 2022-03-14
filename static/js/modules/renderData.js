@@ -1,7 +1,7 @@
 const main = document.querySelector('main');
 
 // render data
-export function render(data) {
+export function renderData(data) {
     const results = data.results;
     console.dir(results);
     results.forEach((item, i) => {
