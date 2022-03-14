@@ -41,6 +41,14 @@ label {
   display: none;
 }
 
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-weight: 600;
+}
+
 /********/
 /* NAV  */
 /********/
@@ -75,6 +83,9 @@ nav a img {
 
 main {
   display: flex;
+  flex-direction: column;
+  padding: 1em;
+  letter-spacing: 1px;
 }
 
 form {
@@ -93,6 +104,8 @@ form input {
   background-repeat: no-repeat;
   background-size: 1.5em 1.5em;
   background-position: 1em center;
+  color: var(--white);
+  font-family: 'Fira Sans', sans-serif;
 }
 
 form input::placeholder {
