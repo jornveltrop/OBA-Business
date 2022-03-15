@@ -194,4 +194,9 @@ nav img {
 nav p {
   margin: .4em 0 0 0;
   font-size: .7em;
+  letter-spacing: .04em;
+}
+
+.activeNav {
+  font-weight: 500;
 }
