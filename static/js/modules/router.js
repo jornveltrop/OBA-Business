@@ -25,10 +25,10 @@ export function handleRoutes() {
         navToggle(2);
         emptyField();
       },
-      ':id': inputField => {
+      'search/:query': query => {
           deleteResults();
 
-          let searchURL = setURL(inputField);
+          let searchURL = setURL(query);
 
           getData(searchURL)
           .then(data => {
@@ -44,7 +44,7 @@ function searchField(event) {
   event.preventDefault();
 
   let searchValue = document.querySelector('input').value;
-  window.location.hash = searchValue;
+  routie(`search/${searchValue}`);
 }
 
 const form = document.querySelector('form');

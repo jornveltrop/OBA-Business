@@ -3,7 +3,7 @@ const config = {
   Authorization: `Bearer ${secret}`
 };
 
-export function setURL(inputField) {
+export function setURL(query) {
   const h2Discover = document.querySelector(".discover h2");
   const cors = 'https://cors-anywhere.herokuapp.com/';
   const endpoint = 'https://zoeken.oba.nl/api/v1/search/?q=';
@@ -12,16 +12,15 @@ export function setURL(inputField) {
 
 
   //Titel vullen met zoekterm
-  h2Discover.textContent = `Resultaten voor: '${inputField}'`;
+  h2Discover.textContent = `Resultaten voor: '${query}'`;
 
   //In geval geen input zoekbalk, laat discover zien
-  if (inputField == 0) {
-      inputField = 'Ondernemen';
+  if (query == 0) {
+      query = 'Ondernemen';
       h2Discover.textContent = 'Discover';
   }
 
   //URL instellen
-  let query = inputField;
   let apiURL = `${cors}${endpoint}${query}&authorization=${key}&detaillevel=${detail}&output=json`;
   return apiURL;
 }
