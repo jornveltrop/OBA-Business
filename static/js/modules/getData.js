@@ -7,7 +7,7 @@ export function setURL(inputField) {
   const h2Discover = document.querySelector(".discover h2");
   const cors = 'https://cors-anywhere.herokuapp.com/';
   const endpoint = 'https://zoeken.oba.nl/api/v1/search/?q=';
-  const key = 'f60b69054b02f50180d9c088e06270ea';
+  const key = '8854ebaac6d5b76ab5a25a372d249680';
   const detail = 'Default';
 
 

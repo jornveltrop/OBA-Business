@@ -62,10 +62,10 @@ h3 {
 }
 
 /********/
-/* NAV  */
+/* HEADER  */
 /********/
 
-nav {
+header {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -73,17 +73,17 @@ nav {
   position: relative;
 }
 
-nav button {
+header button {
   position: absolute;
   left: 1.8em;
   top: 1.6em;
 }
 
-nav button img {
+header button img {
   width: 2em;
 }
 
-nav a img {
+header a img {
   height: 1.7em;
 }
 
@@ -156,5 +156,14 @@ article {
   border-radius: 1em;
   background-repeat: no-repeat;
   background-size: cover;
+}
 
+
+/*  NAV  */
+/*************/
+
+nav {
+  background-color: red;
+  width: 100%;
+  height: 3em;
 }
