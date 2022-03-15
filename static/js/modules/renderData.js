@@ -33,10 +33,11 @@ export function getDetailID() {
 export async function renderDetailData(detailData) {
   const detailIMG = document.querySelector(".detail img");
   const titel = document.querySelector(".detail h2");
-  const author = document.querySelector(".detail p:nth-child(1)");
+  const author = document.querySelector(".detail p:nth-of-type(1)");
 
   let objectData = detailData.record;
   console.log(objectData);
   detailIMG.src = objectData.coverimages[1];
   titel.textContent = objectData.titles[0];
+  author.textContent = objectData.authors;
 }
