@@ -109,7 +109,7 @@ form {
 }
 
 form input {
-  padding: 1em 2em 1em 3.5em;
+  padding: 1em 1em 1em 3.5em;
   width: 80%;
   background-color: var(--grey);
   border: 1px solid var(--lightGrey);

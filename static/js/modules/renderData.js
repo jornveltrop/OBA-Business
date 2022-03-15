@@ -7,7 +7,7 @@ export function renderData(data) {
     results.forEach((item) => {
       const html = `
             <li>
-                <div class="book_img" style="background-image: url('${item.coverimages[0]}');"></div>
+                <div class="book_img" style="background-image: url('${item.coverimages[1]}');"></div>
                 <h3>${item.titles[0]}</h3>
             </li>
             `;
