@@ -19,6 +19,10 @@ export function handleRoutes() {
           })
           .then(emptyField())
       },
+      'library': () => {
+        deleteResults();
+        emptyField();
+      },
       ':id': inputField => {
           deleteResults();
 
