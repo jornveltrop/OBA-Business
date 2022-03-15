@@ -1,5 +1,5 @@
-import { renderData } from './renderData.js'
-import { setURL, getData } from './getData.js'
+import { getDetailID, renderData, renderDetailData } from './renderData.js'
+import { setURL, getData, getDetailData } from './getData.js'
 import { deleteResults, emptyField, navToggle } from './ui.js'
 import './vendor/routie.min.js'
 
@@ -17,6 +17,7 @@ export function handleRoutes() {
           getData(searchURL)
           .then(data => {
             renderData(data)
+            .then(getDetailID())
           })
           .then(emptyField())
       },
@@ -33,8 +34,17 @@ export function handleRoutes() {
           getData(searchURL)
           .then(data => {
             renderData(data)
+              .then(getDetailID())
           })
           .then(emptyField())
+      },
+      'collection/:id': id => {
+          deleteResults();
+
+          getDetailData(id)
+          .then(data => {
+            renderDetailData(data);
+          })
       }
     })
 }

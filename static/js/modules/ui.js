@@ -13,10 +13,10 @@ export function deleteResults() {
 }
 
 export function navToggle(id) {
-    const discoverNavImg = document.querySelector(".discoverNav img");
-    const libraryNavImg = document.querySelector(".libraryNav img");
-    const discoverNavP = document.querySelector(".discoverNav p");
-    const libraryNavP = document.querySelector(".libraryNav p");
+    const discoverNavImg = document.querySelector('.discoverNav img');
+    const libraryNavImg = document.querySelector('.libraryNav img');
+    const discoverNavP = document.querySelector('.discoverNav p');
+    const libraryNavP = document.querySelector('.libraryNav p');
 
     if (id == 1) {
         discoverNavImg.src = 'static/content/icons/home_active.svg'
@@ -29,7 +29,7 @@ export function navToggle(id) {
         discoverNavImg.src = 'static/content/icons/home.svg'
         libraryNavImg.src = 'static/content/icons/bookmark_active.svg'
 
-        discoverNavP.classList.remove("activeNav");
-        libraryNavP.classList.add("activeNav");
+        discoverNavP.classList.remove('activeNav');
+        libraryNavP.classList.add('activeNav');
     }
 }

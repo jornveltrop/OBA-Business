@@ -65,7 +65,7 @@ h3 {
 /* HEADER  */
 /********/
 
-header {
+body > header {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -73,17 +73,17 @@ header {
   position: relative;
 }
 
-header button {
+body > header button {
   position: absolute;
   left: 1.8em;
   top: 1.6em;
 }
 
-header button img {
+body > header button img {
   width: 2em;
 }
 
-header a img {
+body > header a img {
   height: 1.7em;
 }
 
