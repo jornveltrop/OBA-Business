@@ -1,3 +1,5 @@
+import './vendor/routie.min.js'
+
 //Reset inputField
 export function emptyField() {
     document.querySelector("input").value = "";
@@ -32,4 +34,25 @@ export function navToggle(id) {
         discoverNavP.classList.remove('activeNav');
         libraryNavP.classList.add('activeNav');
     }
+}
+
+
+export function showDetail() {
+    const form = document.querySelector('form');
+    const discover = document.querySelector('.discover');
+    const detail = document.querySelector('.detail');
+
+    form.classList.add('hidden');
+    discover.classList.add('hidden');
+    detail.classList.remove('hidden');
+}
+
+export function hideDetail() {
+    const form = document.querySelector('form');
+    const discover = document.querySelector('.discover');
+    const detail = document.querySelector('.detail');
+
+    form.classList.remove('hidden');
+    discover.classList.remove('hidden');
+    detail.classList.add('hidden');
 }

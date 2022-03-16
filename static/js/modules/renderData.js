@@ -16,6 +16,8 @@ export async function renderData(data) {
     });
 }  
 
+let hash;
+
 //Set detailID on rendered data
 export function getDetailID() {
   let allItems = document.querySelectorAll(".discover li");
@@ -23,6 +25,7 @@ export function getDetailID() {
   allItems.forEach(function(item) {
       item.addEventListener("click", function() {
           let id = this.id;
+          hash = window.location.hash;
           routie(`collection/${id}`);
       });
   });
@@ -46,4 +49,9 @@ export async function renderDetailData(detailData) {
   about.textContent = objectData.summaries;
   taal.textContent = objectData.languages;
   kenmerken.textContent = objectData.description[1];
+
+  const close = document.querySelector(".closeButton");
+  close.addEventListener("click", function() {
+    routie(`${hash}`)
+  });
 }

@@ -1,6 +1,6 @@
 import { getDetailID, renderData, renderDetailData } from './renderData.js'
 import { setURL, getData, getDetailData } from './getData.js'
-import { deleteResults, emptyField, navToggle } from './ui.js'
+import { deleteResults, emptyField, hideDetail, navToggle, showDetail } from './ui.js'
 import './vendor/routie.min.js'
 
 
@@ -10,6 +10,7 @@ export function handleRoutes() {
       '': () => {
           deleteResults();
           navToggle(1);
+          hideDetail();
 
           let discover = '';
           let searchURL = setURL(discover);
@@ -22,12 +23,14 @@ export function handleRoutes() {
           .then(emptyField())
       },
       'library': () => {
+        hideDetail();
         deleteResults();
         navToggle(2);
         emptyField();
       },
       'search/:query': query => {
           deleteResults();
+          hideDetail();
 
           let searchURL = setURL(query);
 
@@ -39,7 +42,7 @@ export function handleRoutes() {
           .then(emptyField())
       },
       'collection/:id': id => {
-          deleteResults();
+          showDetail();
 
           getDetailData(id)
           .then(data => {
