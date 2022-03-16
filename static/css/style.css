@@ -125,7 +125,7 @@ body > nav {
   display: flex;
   justify-content: center;
   position: fixed;
-  bottom: 2em;
+  bottom: 1.5em;
 }
 
 body > nav ul {
@@ -200,16 +200,10 @@ article {
 .discover ul {
   list-style: none;
   padding: 0 0 .5em 0;
-  white-space: nowrap;
   display: flex;
   width: 100%;
   overflow-x: auto;
   gap: .7em;
-}
-
-.discover li {
-  flex: 0 0 7.7em;
-  overflow-wrap: break-word;
 }
 
 .discover .book_img {
@@ -243,7 +237,7 @@ article {
 }
 
 .detail nav img {
-  height: 2em;
+  height: 1.3em;
 }
 
 .detail > header {

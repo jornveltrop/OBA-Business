@@ -1,22 +1,21 @@
 const ul = document.querySelector('.discover ul');
+import { getHash, setHash } from './ui.js';
 import './vendor/routie.min.js'
 
 // render data
 export async function renderData(data) {
     const results = data.results;
     console.dir(results);
-    results.forEach((item) => {
+    results.forEach(({id, coverimages, titles}) => {
       const html = `
-            <li id="${item.id}">
-                <div class="book_img" style="background-image: url('${item.coverimages[1]}');"></div>
-                <h3>${item.titles[0]}</h3>
+            <li id="${id}">
+                <div class="book_img" style="background-image: url('${coverimages[1]}');"></div>
+                <h3>${titles[0]}</h3>
             </li>
             `;
       ul.insertAdjacentHTML('beforeend', html);
     });
 }  
-
-let hash;
 
 //Set detailID on rendered data
 export function getDetailID() {
@@ -25,7 +24,7 @@ export function getDetailID() {
   allItems.forEach(function(item) {
       item.addEventListener("click", function() {
           let id = this.id;
-          hash = window.location.hash;
+          setHash();
           routie(`collection/${id}`);
       });
   });
@@ -52,6 +51,6 @@ export async function renderDetailData(detailData) {
 
   const close = document.querySelector(".closeButton");
   close.addEventListener("click", function() {
-    routie(`${hash}`)
+    routie(`${getHash()}`)
   });
 }

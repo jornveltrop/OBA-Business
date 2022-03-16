@@ -56,3 +56,13 @@ export function hideDetail() {
     discover.classList.remove('hidden');
     detail.classList.add('hidden');
 }
+
+let hash;
+
+export function setHash() {
+    hash = window.location.hash;
+}
+
+export function getHash() {
+    return hash;
+}
