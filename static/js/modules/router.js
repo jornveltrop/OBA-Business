@@ -1,4 +1,4 @@
-import { getDetailID, renderData, renderDetailData } from './renderData.js'
+import { getDetailID, renderData, renderDetailData, renderLibraryData } from './renderData.js'
 import { setURL, getData, getDetailData } from './getData.js'
 import { deleteResults, emptyField, hideDetail, navToggle, showDetail } from './ui.js'
 import './vendor/routie.min.js'
@@ -27,6 +27,15 @@ export function handleRoutes() {
         deleteResults();
         navToggle(2);
         emptyField();
+
+        let allFav = JSON.parse(localStorage.getItem('favorites')) || [];
+        console.log(allFav);
+        allFav.forEach(fav => {
+          getDetailData(fav)
+          .then(data => {
+            renderLibraryData(data);
+          })
+        });
       },
       'search/:query': query => {
           deleteResults();

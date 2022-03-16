@@ -1,4 +1,5 @@
 const ul = document.querySelector('.discover ul');
+import { store } from './store.js';
 import { getHash, setHash } from './ui.js';
 import './vendor/routie.min.js'
 
@@ -39,6 +40,7 @@ export async function renderDetailData(detailData) {
   const about = document.querySelector(".detail section > p");
   const taal = document.querySelector(".detail .taal p");
   const kenmerken = document.querySelector(".detail .kenmerken p");
+  const bookmarkButton = document.querySelector(".bookmarkButton");
 
   let objectData = detailData.record;
   console.log(objectData);
@@ -48,9 +50,28 @@ export async function renderDetailData(detailData) {
   about.textContent = objectData.summaries;
   taal.textContent = objectData.languages;
   kenmerken.textContent = objectData.description[1];
+  bookmarkButton.setAttribute("num", `${objectData.id}`);
 
   const close = document.querySelector(".closeButton");
   close.addEventListener("click", function() {
     routie(`${getHash()}`)
   });
+
+  store();
 }
+
+
+// render data
+const ulLibrary = document.querySelector('.library ul');
+export async function renderLibraryData(data) {
+  console.log(data);
+  const results = data.record;
+  console.dir(results);
+  const html = `
+        <li id="${results.id}">
+            <div class="book_img" style="background-image: url('${results.coverimages[1]}');"></div>
+            <h3>${results.titles[0]}</h3>
+        </li>
+        `;
+  ulLibrary.insertAdjacentHTML('beforeend', html);
+}  

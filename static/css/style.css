@@ -134,7 +134,7 @@ body > nav ul {
   border-radius: 1.6em;
   display: flex;
   padding: 1em 2em;
-  gap: 3em;
+  gap: 1.5em;
 }
 
 
@@ -146,7 +146,7 @@ body > nav a {
 }
 
 body > nav img {
-  height: 2em;
+  height: 1.6em;
 }
 
 body > nav p {
@@ -237,7 +237,7 @@ article {
 }
 
 .detail nav img {
-  height: 1.3em;
+  height: 2em;
 }
 
 .detail > header {
@@ -280,7 +280,6 @@ article {
   margin-top: 1.5em;
 }
 
-
 .detail a {
   background: var(--blue);
   padding: 1em 2em;
@@ -290,4 +289,23 @@ article {
   margin-top: 1em;
   text-decoration: none;
   color: var(--white);
+}
+
+
+.library ul {
+  list-style: none;
+  padding: 0 0 .5em 0;
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  gap: .7em;
+}
+
+.library .book_img {
+  height: 11em;
+  width: 7.7em;
+  background-color: var(--lightGrey);
+  border-radius: 1em;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
