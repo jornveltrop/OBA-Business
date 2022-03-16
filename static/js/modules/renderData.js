@@ -31,13 +31,19 @@ export function getDetailID() {
 
 //Render detail data
 export async function renderDetailData(detailData) {
-  const detailIMG = document.querySelector(".detail img");
+  const detailIMG = document.querySelector(".detail header img");
   const titel = document.querySelector(".detail h2");
-  const author = document.querySelector(".detail p:nth-of-type(1)");
+  const author = document.querySelector(".detail header p");
+  const about = document.querySelector(".detail section > p");
+  const taal = document.querySelector(".detail .taal p");
+  const kenmerken = document.querySelector(".detail .kenmerken p");
 
   let objectData = detailData.record;
   console.log(objectData);
   detailIMG.src = objectData.coverimages[1];
   titel.textContent = objectData.titles[0];
   author.textContent = objectData.authors;
+  about.textContent = objectData.summaries;
+  taal.textContent = objectData.languages;
+  kenmerken.textContent = objectData.description[1];
 }

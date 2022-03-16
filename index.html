@@ -19,29 +19,59 @@
   </header>
 
   <main>
-    <form>
+    <form class="hidden">
       <label for="search">Search</label>
       <input type="text" id="search" placeholder="Titels, auteurs en onderwerpen">
     </form>
 
-    <article class="discover">
-      <h2>Discover</h2>
+    <article class="discover hidden">
+      <header>
+        <h2>Discover</h2>
+      </header>
+      
       <ul>
       </ul>
     </article>
 
-    <section class="detail">
+    <article class="detail visible">
+      <nav>
+        <button class="closeButton">
+          <img src="static/content/icons/cross.svg">
+        </button>
+        <button class="bookmarkButton">
+          <img src="static/content/icons/bookmark.svg">
+        </button>
+      </nav>
+
       <header>
         <div>
           <img>
         </div>
-        <h2>Detail</h2>
+        <h2>'Titel boek'</h2>
+        <p>Author</p>
       </header>
-      <p>dnsgjdng</p>
-      <p></p>
+      <a href=>Reserveer</a>
+      <section>
+        <header>
+          <h4>Over dit boek</h4>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+        
+        <div>
+          <span class="taal">
+            <h4>Taal</h4>
+            <p>Nederlands</p>
+          </span>
+          <span class="kenmerken">
+            <h4>Kenmerken</h4>
+            <p>48 pagina's: illustraties ; 30 cm</p>
+          </span>
+        </div>
 
-      <p></p>
-    </section>
+        
+      </section>
+      
+    </article>
 
   </main>
 
