@@ -30,6 +30,7 @@ export function handleRoutes() {
           console.log(searchBronURL)
           getBronData(searchBronURL)
           .then(data => {
+            console.dir(data);
             renderBronData(data, 'video')
             // .then(getBronDetailID('video'))
           })

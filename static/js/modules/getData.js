@@ -70,7 +70,8 @@ export function setBronURL(query) {
 
 //Get data
 export async function getBronData(url) {
-    let data = fetch(url)
+
+    let data = fetch(url, {mode: 'no-cors'})
     .then(response => {
       return response.json();
     })
