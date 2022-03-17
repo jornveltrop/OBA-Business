@@ -48,7 +48,7 @@ export async function getDetailData(id) {
   const endpoint = 'https://zoeken.oba.nl/api/v1/details/?id=';
   const key = '8854ebaac6d5b76ab5a25a372d249680';
 
-  let urlDetail = `${cors}${endpoint}${id}&librarian=true&authorization=${key}&output=json`;
+  let urlDetail = `${cors}${endpoint}${id}&authorization=${key}&output=json`;
 
   let data = fetch(urlDetail, config)
   .then(response => {
