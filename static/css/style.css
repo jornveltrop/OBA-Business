@@ -57,9 +57,12 @@ h3 {
   margin: .5em 0 0 0;
   font-weight: 400;
   font-size: .9em;
-  overflow-wrap: break-word;
-  text-overflow: ellipsis;
+  max-height: 3.6em;
+  display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow-wrap: break-word;
 }
 
 h4 {
@@ -75,9 +78,9 @@ p {
   display: none;
 }
 
-/********/
-/* HEADER  */
-/********/
+/************/
+/*  HEADER  */
+/************/
 
 body > header {
   display: flex;
@@ -197,6 +200,10 @@ article {
   position: relative;
 }
 
+article li {
+  width: 7.7em;
+}
+
 .discover ul {
   list-style: none;
   padding: 0 0 .5em 0;
@@ -206,7 +213,7 @@ article {
   gap: .7em;
 }
 
-.discover .book_img {
+.book_img {
   height: 11em;
   width: 7.7em;
   background-color: var(--lightGrey);
@@ -292,20 +299,13 @@ article {
 }
 
 
-.library ul {
+.column ul {
   list-style: none;
   padding: 0 0 .5em 0;
   display: flex;
   width: 100%;
   overflow-x: auto;
-  gap: .7em;
-}
-
-.library .book_img {
-  height: 11em;
-  width: 7.7em;
-  background-color: var(--lightGrey);
-  border-radius: 1em;
-  background-repeat: no-repeat;
-  background-size: cover;
+  gap: 1.5em .7em;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }

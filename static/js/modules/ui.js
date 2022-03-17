@@ -6,8 +6,8 @@ export function emptyField() {
 }
 
 //Verwijder huidige resultaten
-export function deleteResults() {
-    let listItems = document.querySelectorAll(".discover li");
+export function deleteResults(article) {
+    let listItems = document.querySelectorAll(`.${article} li`);
 
     listItems.forEach(listItem => {
         listItem.remove();
@@ -37,27 +37,41 @@ export function navToggle(id) {
 }
 
 
-export function showDetail() {
-    const form = document.querySelector('form');
-    const discover = document.querySelector('.discover');
-    const detail = document.querySelector('.detail');
 
+const form = document.querySelector('form');
+const discover = document.querySelector('.discover');
+const detail = document.querySelector('.detail');
+const library = document.querySelector('.library');
+
+export function showDetail() {
     form.classList.add('hidden');
     discover.classList.add('hidden');
     detail.classList.remove('hidden');
+    library.classList.add('hidden');
 }
 
 export function hideDetail() {
-    const form = document.querySelector('form');
-    const discover = document.querySelector('.discover');
-    const detail = document.querySelector('.detail');
-
     form.classList.remove('hidden');
     discover.classList.remove('hidden');
     detail.classList.add('hidden');
+    library.classList.add('hidden');
 }
 
-let hash;
+export function showLibrary() {
+    form.classList.add('hidden');
+    discover.classList.add('hidden');
+    detail.classList.add('hidden');
+    library.classList.remove('hidden');
+}
+
+export function hideLibrary() {
+    form.classList.remove('hidden');
+    discover.classList.remove('hidden');
+    detail.classList.add('hidden');
+    library.classList.add('hidden');
+}
+
+let hash = "";
 
 export function setHash() {
     hash = window.location.hash;
