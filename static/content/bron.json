@@ -1,0 +1,298 @@
+{
+  "meta": {
+    "time-taken": "333",
+    "result-count": "687",
+    "page-count": "20",
+    "rctx": "AQ3IOw6CQBAA0FkJIcQjGCJ2VoAYS6$gjT1ZlgFGh13cT4xX9ASexkjxmicgWkMCh5PTR5J$evZ3VxFP3mAtH$oUpZA6GxqI4HXVHVqNE$r8cr3lbKaCqUf1VoyFMtpbaoPHYg4tkxvRnl@0oBk7kiDiDTUWlZvRznLAuK4y1YzkRxpGXvh1L9nhCn75JxP77xYgMa0EgF1pjfEl0zNQVy6XBMsQaxbiDw==",
+    "current-page": "1",
+    "current-sort-method": "",
+    "sort-methods": []
+  },
+  "results": [
+    {
+      "id": "|universal/sru_edurep|aeres:oai:www.greeni.nl:VBS:2:144477",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://www.greeni.nl/iguana/CMS.MetaDataEditDownload.cls?file=2:144477:1",
+      "titles": [
+        "Maatschappelijk verantwoord ondernemen in de melkveehouderij : het onderzoek naar de mogelijkheden waarop de loonwerksector bij kan dragen aan maatschappelijk verantwoord ondernemen in de melkveehouderij"
+      ],
+      "formats": [],
+      "authors": ["Scheper, J."],
+      "authorsDetailed": [{ "full": "Scheper, J." }],
+      "publisher": ["Aeres Hogeschool, 2018"],
+      "languages": ["nl"],
+      "summaries": [
+        "Ondernemen in de 21e eeuw, een digitaal tijdperk waarin duurzaamheid en Maatschappelijk Verantwoord Ondernemen een belangrijke rol spelen. Waarin precisielandbouw de markt probeert te veroveren en waarbij melkveehouders voor diverse keuzes staan om hier een bijdrage aan te leveren. Keuzes die worden gemaakt op basis van de Triple Bottom Line dimensies People, Planet en Profit, waarbij in dit onderzoek wordt gekeken naar de kansen die een loonwerker krijgt om bij te dragen aan maatschappelijk verantwoord ondernemen in de melkveehouderijsector."
+      ]
+    },
+    {
+      "id": "|universal/sru_edurep|KennisLink:oai:kennislink.nl/4520",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "http://www.kennislink.nl/publicaties/handen-af-van-maatschappelijk-verantwoord-ondernemen-mvo",
+      "titles": ["Handen af van Maatschappelijk Verantwoord Ondernemen (MVO)"],
+      "formats": [],
+      "authors": ["dr. Wim Dubbink"],
+      "authorsDetailed": [{ "full": "dr. Wim Dubbink" }],
+      "publisher": ["Kennislink"],
+      "languages": ["nl"],
+      "summaries": [
+        "Maatschappelijk ondernemen wordt door de overheid ingezet als instrument om bedrijven tot beter gedrag aan te zetten. Dat is geen goede zaak. In elk geval niet als het de nadruk legt op maatschappelijk verantwoord ondernemen (MVO) vanuit eigenbelang. Dit haalt de morele waarde van het begrip MVO naar beneden, waardoor het op lange termijn weinig meer tot de verbeelding spreekt en moeilijk houdbaar is. Bovendien verliest MVO haar essentie, namelijk dat ze juist tegen de fixatie op eigenbelang in behoort in te gaan."
+      ]
+    },
+    {
+      "id": "|universal/sru_edurep|KennisLink:oai:kennislink.nl/3971",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "http://www.kennislink.nl/publicaties/bedrijven-moeten-duurzaam-ondernemen-vanuit-hun-specialiteit",
+      "titles": [
+        "Bedrijven moeten duurzaam ondernemen vanuit hun specialiteit"
+      ],
+      "formats": [],
+      "authors": ["dr. Frans J. Sijtsma"],
+      "authorsDetailed": [{ "full": "dr. Frans J. Sijtsma" }],
+      "publisher": ["Kennislink"],
+      "languages": ["nl"],
+      "summaries": [
+        "Groene energie van Shell en krediet voor de armen van de ABN AMRO. Dat is waar het volgens Sijtsma om gaat bij duurzaam ondernemen. Leg een bedrijf geen eindeloze lijst van criteria voor, maar kijk wat het in zijn specifieke sector en omgeving kan betekenen voor mondiale duurzaamheid."
+      ]
+    },
+    {
+      "id": "|universal/sru_edurep|Schooltv:/NTR/POMS/WO_NTR_7118147",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://schooltv.nl/video/dream-school-ondernemen/",
+      "titles": ["Dream School:Ondernemen"],
+      "formats": [],
+      "publisher": ["Schooltv"],
+      "languages": ["nl"],
+      "summaries": [
+        "In Dream School geeft ondernemer Jeroen van den Berg uitleg over hoe je een bedrijf start. Hij is de oprichter van autobedrijf Carlink en verkoopt daar exclusieve auto's. Daarnaast is hij de oprichter van Club Air geweest en kennen we hem vooral van dj Afrojack. In Dream School opent hij een stagebureau voor de leerlingen!"
+      ]
+    },
+    {
+      "id": "|universal/sru_edurep|wellant:oai:oc:OC-38016.xml",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://contentplatform.ontwikkelcentrum.nl/Pages/View.aspx?cp=%2FCMS%2FCDS%2FOntwikkelcentrum%2FPublished%20content%2FECC%20SP%20modules%2FCKS%20en%20Impact%2F38%20algemeen%2FOC-38016d",
+      "titles": ["Omgevingsbewust ondernemen"],
+      "formats": [],
+      "publisher": [
+        "BEGIN:VCARD\nVERSION:3.0 FN:Stichting Ontwikkelcentrum ORG:Stichting Ontwikkelcentrum ADR;TYPE=WORK:;;Willy Brandtlaan 81;Ede;;6710 BL;Nederland EMAIL;TYPE=INTERNET:info@ontwikkelcentrum.nl\nEND:VCARD"
+      ],
+      "languages": ["nl"],
+      "summaries": [
+        "Het milieu is al jaren een belangrijk speerpunt voor veel bedrijven. En dan gaat het niet alleen om je directe omgeving, maar ook het milieu van de rest van de aarde. Er zijn keurmerken die je helpen bij het zoeken naar verantwoorde producten. En er zijn richtlijnen voor als je verantwoord wil gaan ondernemen. Uiteindelijk is het goed voor je omgeving én voor jezelf."
+      ]
+    },
+    {
+      "id": "|universal/sru_edurep|wur_staff:oai:library.wur.nl:wurpubs/394865",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://edepot.wur.nl/146003",
+      "titles": ["Duurzaam toerisme. Voor een toekomstbestendige reissector"],
+      "formats": [],
+      "authors": [
+        "Mosselaer, F.F.H., van de",
+        "Hardeman, G.",
+        "Duim, V.R., van der",
+        "Klep, R."
+      ],
+      "authorsDetailed": [
+        { "full": "Mosselaer, F.F.H., van de" },
+        { "full": "Hardeman, G." },
+        { "full": "Duim, V.R., van der" },
+        { "full": "Klep, R." }
+      ],
+      "publisher": ["ANVR/Wageningen Universiteit, 2010"],
+      "languages": ["nl"],
+      "summaries": [
+        "De veranderingen in de reissector en de ontwikkelingen in de wereld vragen van de reisbranche een nieuwe kijk op ondernemen. Duurzaam ondernemen zal de komende jaren een steeds grotere rol gaan spelen. En inzetten op duurzaam ondernemen biedt kansen! Duurzaamheid is veel meer dan een keuze voor ‘groen’. Het is een nieuwe manier van ondernemen die bepalend is voor een toekomstbestendige onderneming. Duurzaamheid gaat over de klant, over producten en diensten, het merk en de bedrijfsvoering."
+      ]
+    },
+    {
+      "id": "|universal/sru_edurep|Schooltv:/NTR/POMS/WO_NTR_1813788",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://schooltv.nl/video/metropolis-in-de-klas-slim-ondernemen/",
+      "titles": ["Metropolis in de klas:Slim ondernemen"],
+      "formats": [],
+      "publisher": ["Schooltv"],
+      "languages": ["nl"],
+      "summaries": [
+        "Waar in de wereld kun je het beste slapend rijk worden? In deze aflevering van Metropolis in de klas gaan we op zoek naar mensen die liever lui zijn dan moe en die met een slim plan makkelijk geld verdienen. Door creativiteit, originaliteit of door op het randje van legaliteit te balanceren."
+      ]
+    },
+    {
+      "id": "|universal/sru_edurep|lectorhas:oai:www.greeni.nl:VBS:2:148348",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://www.greeni.nl/iguana/www.main.cls?surl=greenisearch#RecordId=2.148348",
+      "titles": ["The start-up challenge"],
+      "formats": [],
+      "authors": ["Woudenberg, van, E."],
+      "authorsDetailed": [{ "full": "Woudenberg, van, E." }],
+      "publisher": ["HAS Hogeschool, 2018"],
+      "languages": ["nl"],
+      "summaries": [
+        "Lector Erwin van Woudenberg van het lectoraat Innovatief ondernemen met de Natuur spreekt over The Start-up Challenge."
+      ]
+    },
+    {
+      "id": "|universal/sru_edurep|KlasCement:oai:s01.klascement.net:62026",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://www.klascement.net/62026/",
+      "titles": ["Les Zelfstandig ondernemen : Oefeningen TURKS"],
+      "formats": [],
+      "publisher": ["KlasCement, 2015-12-14"],
+      "languages": ["tr"],
+      "summaries": [
+        "Dit is de geactualiseerde versie van de les Zelfstandig ondernemen uit de Climodiek. ",
+        "This is the updated version of the Self-employment lesson from Climodiek."
+      ]
+    },
+    {
+      "id": "|universal/sru_edurep|KlasCement:oai:s01.klascement.net:39908",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://www.klascement.net/39908/",
+      "titles": ["Maatschappelijk verantwoord ondernemen : Prezi"],
+      "formats": [],
+      "authors": ["Leen Van Damme"],
+      "authorsDetailed": [{ "full": "Leen Van Damme" }],
+      "publisher": ["KlasCement, 2013-01-25"],
+      "languages": ["nl"],
+      "summaries": [
+        "Een les over duurzaam ondernemen, met behulp van een filmpje, een opdracht voor de leerlingen en overzichtsdia's.",
+        " "
+      ]
+    },
+    {
+      "id": "|universal/sru_edurep|KlasCement:oai:s01.klascement.net:56451",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://www.klascement.net/56451/",
+      "titles": ["Les Zelfstandig ondernemen : Oefeningen ENGELS"],
+      "formats": [],
+      "publisher": ["KlasCement, 2015-04-22"],
+      "languages": ["nl"],
+      "summaries": [
+        "Dit is de geactualiseerde versie van de les Zelfstandig ondernemen uit de Climodiek. ",
+        "This is the updated version of the Independent entrepreneurship lesson from Climodiek."
+      ]
+    },
+    {
+      "id": "|universal/sru_edurep|wur_staff:oai:library.wur.nl:wurpubs/526134",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://edepot.wur.nl/423178",
+      "titles": [
+        "Verbindend ondernemen : Betekenisvolle biologische sector, vandaag en (over)morgen"
+      ],
+      "formats": [],
+      "authors": ["Dagevos, Hans", "Wijnands, Frank", "Meeusen, Marieke"],
+      "authorsDetailed": [
+        { "full": "Dagevos, Hans" },
+        { "full": "Wijnands, Frank" },
+        { "full": "Meeusen, Marieke" }
+      ],
+      "publisher": ["Wageningen University & Research, 2017"],
+      "languages": ["nl"],
+      "summaries": [
+        "In dit ‘inspiratieboekje’ Verbindend ondernemen ligt de nadruk op conceptueel-theoretische noties en redeneerlijnen die de bedoeling hebben de sociale dimensie van duurzaamheid – de P van people – perspectief en inhoud te geven."
+      ]
+    },
+    {
+      "id": "|universal/sru_edurep|KlasCement:oai:s01.klascement.net:57954",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://www.klascement.net/57954/",
+      "titles": ["Les Zelfstandig ondernemen : Oefeningen FRANS"],
+      "formats": [],
+      "publisher": ["KlasCement, 2015-07-07"],
+      "languages": ["fr"],
+      "summaries": [
+        "Dit is de geactualiseerde versie van de les Zelfstandig ondernemen uit de Climodiek. ",
+        "This is the updated version of the Self-employment lesson from Climodiek."
+      ]
+    },
+    {
+      "id": "|universal/sru_edurep|KlasCement:oai:s01.klascement.net:57953",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://www.klascement.net/57953/",
+      "titles": ["Les Zelfstandig ondernemen : Oefeningen ARABISCH"],
+      "formats": [],
+      "publisher": ["KlasCement, 2015-07-07"],
+      "languages": ["ar"],
+      "summaries": [
+        "Dit is de geactualiseerde versie van de les Zelfstandig ondernemen uit de Climodiek. ",
+        "This is the updated version of the Self-employment lesson from Climodiek."
+      ]
+    },
+    {
+      "id": "|universal/sru_edurep|KlasCement:oai:s01.klascement.net:94855",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://www.klascement.net/94855/",
+      "titles": ["Onderzoekscompetenties economie : Vier opdrachten"],
+      "formats": [],
+      "publisher": ["KlasCement, 2019-08-29"],
+      "languages": ["nl"],
+      "summaries": [
+        "Opdracht om de onderzoekscompetenties van economie van de 2e graad ASO te bereiken.\n4 deelopdrachten:\n1. wekelijkse actualiteit via quiz,\n2. actualiteitsmap gedurende het ganse schooljaar,\n3. maatschappelijk verantwoord ondernemen in theorie,\n4. maatschappelijk verantwoord ondernemen in praktijk.",
+        "Assignment to achieve the research competences of economics of the 2nd grade ASO. 4 partial assignments: 1. weekly news via quiz, 2. current affairs folder throughout the school year, 3. corporate social responsibility in theory, 4. corporate social responsibility in practice."
+      ]
+    },
+    {
+      "id": "|universal/sru_edurep|vhl:oai:www.greeni.nl:VBS:2:141125",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://www.greeni.nl/iguana/CMS.MetaDataEditDownload.cls?file=2:141125:1",
+      "titles": [
+        "Duurzaam ondernemen op Ameland : een advies aan de gemeente Ameland over hoe zij het best de ondernemers kan faciliteren in duurzaam ondernemen"
+      ],
+      "formats": [],
+      "authors": ["Smits, J.T.", "Visser, B.R."],
+      "authorsDetailed": [
+        { "full": "Smits, J.T." },
+        { "full": "Visser, B.R." }
+      ],
+      "publisher": ["VHL, 2016"],
+      "languages": ["nl"],
+      "summaries": [
+        "De gemeente Ameland heeft de ambitie om in 2020 een energieneutraal eiland te zijn op het gebied van duurzame energie- en watervoorziening. Op dit moment ontbreekt de kennis bij de gemeente hoe zij ondernemers het beste kunnen faciliteren in het proces om duurzaam te gaan ondernemen. Daarnaast is er nu nog geen informatiemateriaal waar kort en bondig wordt verteld wat ondernemers moeten voorbereiden voordat ze naar de gemeente gaan met vragen over duurzaamheid of duurzaam ondernemen. Doordat het nu nog lastig is om de ondernemers te voorzien van hulp wordt het ook lastig om de gestelde ambitie behalen. Dit allemaal heeft geleid tot de volgende hoofdvraag van dit onderzoek: ‘Wat is de beste manier waarop de gemeente Ameland kan faciliteren in het proces van ondernemers op Ameland om duurzaam te gaan ondernemen, en om zo de doelstelling om in 2020 een energieneutraal eiland te zijn te realiseren, en is dit haalbaar?’ Door middel van een literatuurstudie, interviews bij gemeenten en een QuickScan onder een aantal geselecteerde ondernemers zijn verschillende bevindingen gevonden. Deze bevindingen zijn vervolgens gecombineerd in een Multi Criteria Analyse. Hiermee is een zo goed mogelijk antwoord gegeven op de hoofdvraag."
+      ]
+    },
+    {
+      "id": "|universal/sru_edurep|edurep_delen:ba07a785-5f74-437a-87ee-f85175742574",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://delen.edurep.nl/download/ba07a785-5f74-437a-87ee-f85175742574",
+      "titles": ["ONDERNEMEN EN INNOVEREN DEEL III ONDERZOEKEN"],
+      "formats": [],
+      "authors": ["RN MEd Petra Huizenga"],
+      "authorsDetailed": [{ "full": "RN MEd Petra Huizenga" }],
+      "publisher": ["Edurep Delen, 2018-12-13"],
+      "languages": ["nl"]
+    },
+    {
+      "id": "|universal/sru_edurep|edurep_delen:a505d2d5-15b2-4ab8-adb8-dee889f1ba4c",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://delen.edurep.nl/download/a505d2d5-15b2-4ab8-adb8-dee889f1ba4c",
+      "titles": ["ONDERNEMEN EN INNOVEREN DEEL VI EVALUATIE"],
+      "formats": [],
+      "authors": ["RN MEd Petra Huizenga"],
+      "authorsDetailed": [{ "full": "RN MEd Petra Huizenga" }],
+      "publisher": ["Edurep Delen, 2018-12-13"],
+      "languages": ["nl"]
+    },
+    {
+      "id": "|universal/sru_edurep|edurep_delen:1fb4a5fb-c49c-41b0-83ad-98da05afa133",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://delen.edurep.nl/download/1fb4a5fb-c49c-41b0-83ad-98da05afa133",
+      "titles": ["ONDERNEMEN EN INNOVEREN DEEL V PRESENTATIE"],
+      "formats": [],
+      "authors": ["RN MEd Petra Huizenga"],
+      "authorsDetailed": [{ "full": "RN MEd Petra Huizenga" }],
+      "publisher": ["Edurep Delen, 2018-12-13"],
+      "languages": ["nl"]
+    },
+    {
+      "id": "|universal/sru_edurep|edurep_delen:d431b866-60f3-4ec3-adac-56036ccda3ab",
+      "frabl": { "key1": "", "key2": "", "cnt": "", "value": "" },
+      "detailLink": "https://delen.edurep.nl/download/d431b866-60f3-4ec3-adac-56036ccda3ab",
+      "titles": ["ONDERNEMEN EN INNOVEREN DEEL I SIGNALEREN"],
+      "formats": [],
+      "authors": ["RN MEd Petra Huizenga"],
+      "authorsDetailed": [{ "full": "RN MEd Petra Huizenga" }],
+      "publisher": ["Edurep Delen, 2018-12-13"],
+      "languages": ["nl"]
+    }
+  ]
+}
