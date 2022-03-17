@@ -1,5 +1,5 @@
-import { getDetailID, renderBronData, renderData, renderDetailData, renderLibraryData } from './renderData.js'
-import { setURL, getData, getDetailData, setBronURL, getBronData } from './getData.js'
+import { getDetailID, renderData, renderDetailData, renderLibraryData } from './renderData.js'
+import { setURL, getData, getDetailData } from './getData.js'
 import { deleteResults, emptyField, hideDetail, hideLibrary, navToggle, showDetail, showLibrary, showSearch, hideSearch } from './ui.js'
 import './vendor/routie.min.js'
 
@@ -24,18 +24,6 @@ export function handleRoutes() {
             .then(getDetailID('discover'))
           })
           .then(emptyField())
-          
-          let bronField = 'Ondernemen';
-          let searchBronURL = setBronURL(bronField);
-          console.log(searchBronURL)
-          getBronData(searchBronURL)
-          .then(data => {
-            console.dir(data);
-            renderBronData(data, 'video')
-            // .then(getBronDetailID('video'))
-          })
-          .then(emptyField())
-        
       },
       'library': () => {
         showLibrary();

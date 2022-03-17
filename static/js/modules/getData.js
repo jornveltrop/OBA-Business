@@ -55,29 +55,3 @@ export async function getDetailData(id) {
 
   return data;
 }
-
-
-export function setBronURL(query) {
-  const cors = 'http://obaliquid.staging.aquabrowser.nl/onderwijs/api/v1/search/?q=';
-  const middle = '+NOT+lom.lifecycle.contribute.publisher%3Dwikipedia';
-  const key = '8854ebaac6d5b76ab5a25a372d249680';
-
-  //URL instellen
-  let apiURL = `${cors}${query}${middle}&authorization=${key}&output=json`;
-  return apiURL;
-}
-
-
-//Get data
-export async function getBronData(url) {
-
-    let data = fetch(url)
-    .then(response => {
-      return response;
-    })
-    .catch(err => {
-      console.log(err);
-    });  
-
-    return data;
-}
