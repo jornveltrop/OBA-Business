@@ -63,7 +63,7 @@ export function setBronURL(query) {
   const key = '8854ebaac6d5b76ab5a25a372d249680';
 
   //URL instellen
-  let apiURL = `${cors}${query}&authorization=${key}&output=json`;
+  let apiURL = `${cors}${query}${middle}&authorization=${key}&output=json`;
   return apiURL;
 }
 
@@ -71,9 +71,9 @@ export function setBronURL(query) {
 //Get data
 export async function getBronData(url) {
 
-    let data = fetch(url, {mode: 'no-cors'})
+    let data = fetch(url, {mode: 'cors'})
     .then(response => {
-      return response.json();
+      return response;
     })
     .catch(err => {
       console.log(err);
