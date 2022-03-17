@@ -1,6 +1,6 @@
 import { getDetailID, renderData, renderDetailData, renderLibraryData } from './renderData.js'
 import { setURL, getData, getDetailData } from './getData.js'
-import { deleteResults, emptyField, hideDetail, hideLibrary, navToggle, showDetail, showLibrary } from './ui.js'
+import { deleteResults, emptyField, hideDetail, hideLibrary, navToggle, showDetail, showLibrary, showSearch, hideSearch } from './ui.js'
 import './vendor/routie.min.js'
 
 
@@ -12,14 +12,15 @@ export function handleRoutes() {
           navToggle(1);
           hideDetail();
           hideLibrary();
+          hideSearch();
 
           let discoverField = '';
-          let searchURL = setURL(discoverField);
+          let searchURL = setURL(discoverField, 'discover');
 
           getData(searchURL)
           .then(data => {
-            renderData(data)
-            .then(getDetailID())
+            renderData(data, 'discover')
+            .then(getDetailID('discover'))
           })
           .then(emptyField())
       },
@@ -28,27 +29,30 @@ export function handleRoutes() {
         deleteResults('library');
         navToggle(2);
         emptyField();
+        hideSearch();
 
         let allFav = JSON.parse(localStorage.getItem('favorites')) || [];
         console.log(allFav);
         allFav.forEach(fav => {
           getDetailData(fav)
           .then(data => {
-            renderLibraryData(data);
+            renderLibraryData(data)
+              .then(getDetailID('library'))
           })
         });
       },
       'search/:query': query => {
-          deleteResults('discover');
+          deleteResults('search');
           hideDetail();
           hideLibrary();
+          showSearch();
 
-          let searchURL = setURL(query);
+          let searchURL = setURL(query, 'search');
 
           getData(searchURL)
           .then(data => {
-            renderData(data)
-              .then(getDetailID())
+            renderData(data, 'search')
+              .then(getDetailID('search'))
           })
           .then(emptyField())
       },

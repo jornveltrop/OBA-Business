@@ -42,12 +42,14 @@ const form = document.querySelector('form');
 const discover = document.querySelector('.discover');
 const detail = document.querySelector('.detail');
 const library = document.querySelector('.library');
+const search = document.querySelector('.search');
 
 export function showDetail() {
     form.classList.add('hidden');
     discover.classList.add('hidden');
     detail.classList.remove('hidden');
     library.classList.add('hidden');
+    search.classList.add('hidden');
 }
 
 export function hideDetail() {
@@ -69,6 +71,16 @@ export function hideLibrary() {
     discover.classList.remove('hidden');
     detail.classList.add('hidden');
     library.classList.add('hidden');
+}
+
+export function showSearch() {
+    search.classList.remove('hidden');
+    discover.classList.add('hidden');
+    detail.classList.add('hidden');
+}
+
+export function hideSearch() {
+    search.classList.add('hidden');
 }
 
 let hash = "";

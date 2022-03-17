@@ -1,10 +1,11 @@
-const ul = document.querySelector('.discover ul');
+let ul = document.querySelector('.discover ul');
 import { store } from './store.js';
 import { getHash, setHash } from './ui.js';
 import './vendor/routie.min.js'
 
 // render data
-export async function renderData(data) {
+export async function renderData(data, article) {
+    let ul = document.querySelector(`.${article} ul`);
     const results = data.results;
     console.dir(results);
     results.forEach(({id, coverimages, titles}) => {
@@ -19,8 +20,8 @@ export async function renderData(data) {
 }  
 
 //Set detailID on rendered data
-export function getDetailID() {
-  let allItems = document.querySelectorAll(".discover li");
+export function getDetailID(article) {
+  let allItems = document.querySelectorAll(`.${article} li`);
 
   allItems.forEach(function(item) {
       item.addEventListener("click", function() {

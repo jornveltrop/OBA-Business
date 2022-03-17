@@ -13,7 +13,6 @@ export function store() {
         const bookmarkIMG = document.querySelector('.bookmarkButton img');
         const bookmarkNum = bookmark.getAttribute("num");
         if (favorites.includes(bookmarkNum)) {
-            console.log('JAAAAA');
             bookmarkIMG.src = "static/content/icons/bookmark_active.svg"
         }
         else {

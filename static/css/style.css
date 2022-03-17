@@ -220,6 +220,7 @@ article li {
   border-radius: 1em;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 
@@ -305,7 +306,7 @@ article li {
   display: flex;
   width: 100%;
   overflow-x: auto;
-  gap: 1.5em .7em;
-  justify-content: space-between;
+  gap: 1.5em 1em;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
 }

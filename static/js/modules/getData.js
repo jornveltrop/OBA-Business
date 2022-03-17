@@ -3,8 +3,8 @@ const config = {
   Authorization: `Bearer ${secret}`
 };
 
-export function setURL(query) {
-  const h2Discover = document.querySelector(".discover h2");
+export function setURL(query, article) {
+  let h2Discover = document.querySelector(`.${article} h2`);
   const cors = 'https://cors-anywhere.herokuapp.com/';
   const endpoint = 'https://zoeken.oba.nl/api/v1/search/?q=';
   const key = '8854ebaac6d5b76ab5a25a372d249680';
@@ -15,7 +15,8 @@ export function setURL(query) {
   h2Discover.textContent = `Resultaten voor: '${query}'`;
 
   //In geval geen input zoekbalk, laat discover zien
-  if (query == 0) {
+  if (query == '') {
+      console.log('test')
       query = 'Ondernemen';
       h2Discover.textContent = 'Discover';
   }
@@ -47,7 +48,7 @@ export async function getDetailData(id) {
   const endpoint = 'https://zoeken.oba.nl/api/v1/details/?id=';
   const key = '8854ebaac6d5b76ab5a25a372d249680';
 
-  let urlDetail = `${cors}${endpoint}${id}&authorization=${key}&output=json`;
+  let urlDetail = `${cors}${endpoint}${id}&librarian=true&authorization=${key}&output=json`;
 
   let data = fetch(urlDetail, config)
   .then(response => {
