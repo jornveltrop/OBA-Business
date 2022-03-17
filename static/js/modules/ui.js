@@ -39,14 +39,14 @@ export function navToggle(id) {
 
 
 const form = document.querySelector('form');
-const discover = document.querySelector('.discover');
+const home = document.querySelector('.home');
 const detail = document.querySelector('.detail');
 const library = document.querySelector('.library');
 const search = document.querySelector('.search');
 
 export function showDetail() {
     form.classList.add('hidden');
-    discover.classList.add('hidden');
+    home.classList.add('hidden');
     detail.classList.remove('hidden');
     library.classList.add('hidden');
     search.classList.add('hidden');
@@ -54,28 +54,28 @@ export function showDetail() {
 
 export function hideDetail() {
     form.classList.remove('hidden');
-    discover.classList.remove('hidden');
+    home.classList.remove('hidden');
     detail.classList.add('hidden');
     library.classList.add('hidden');
 }
 
 export function showLibrary() {
     form.classList.add('hidden');
-    discover.classList.add('hidden');
+    home.classList.add('hidden');
     detail.classList.add('hidden');
     library.classList.remove('hidden');
 }
 
 export function hideLibrary() {
     form.classList.remove('hidden');
-    discover.classList.remove('hidden');
+    home.classList.remove('hidden');
     detail.classList.add('hidden');
     library.classList.add('hidden');
 }
 
 export function showSearch() {
     search.classList.remove('hidden');
-    discover.classList.add('hidden');
+    home.classList.add('hidden');
     detail.classList.add('hidden');
 }
 

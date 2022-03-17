@@ -1,4 +1,3 @@
-let ul = document.querySelector('.discover ul');
 import { store } from './store.js';
 import { getHash, setHash } from './ui.js';
 import './vendor/routie.min.js'
@@ -42,6 +41,10 @@ export async function renderDetailData(detailData) {
   const taal = document.querySelector(".detail .taal p");
   const kenmerken = document.querySelector(".detail .kenmerken p");
   const bookmarkButton = document.querySelector(".bookmarkButton");
+  const reserveerButton = document.querySelector(".detail > a");
+  
+  let ppn = '';
+  let reserveerURL = `https://iguana.oba.nl/iguana/www.main.cls?sUrl=search&theme=OBA#app=Reserve&ppn=${ppn}`
 
   let objectData = detailData.record;
   console.log(objectData);
@@ -52,6 +55,8 @@ export async function renderDetailData(detailData) {
   taal.textContent = objectData.languages;
   kenmerken.textContent = objectData.description[1];
   bookmarkButton.setAttribute("num", `${objectData.id}`);
+  reserveerButton.href = reserveerURL;
+
 
   const close = document.querySelector(".closeButton");
   close.addEventListener("click", function() {
@@ -75,4 +80,24 @@ export async function renderLibraryData(data) {
         </li>
         `;
   ulLibrary.insertAdjacentHTML('beforeend', html);
+}  
+
+
+
+
+
+// render data
+export async function renderBronData(data, article) {
+  let ul = document.querySelector(`.${article} ul`);
+  const results = data.results;
+  console.dir(results);
+  results.forEach(({id, coverimages, titles}) => {
+    const html = `
+          <li id="${id}">
+              <div class="book_img" style="background-image: url('${coverimages[1]}');"></div>
+              <h3>${titles[0]}</h3>
+          </li>
+          `;
+    ul.insertAdjacentHTML('beforeend', html);
+  });
 }  

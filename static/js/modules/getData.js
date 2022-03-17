@@ -1,8 +1,3 @@
-const secret = '34dd0c6e69370e1b0d2b06fb8343c17f';
-const config = {
-  Authorization: `Bearer ${secret}`
-};
-
 export function setURL(query, article) {
   let h2Discover = document.querySelector(`.${article} h2`);
   const cors = 'https://cors-anywhere.herokuapp.com/';
@@ -29,7 +24,7 @@ export function setURL(query, article) {
 
 //Get data
 export async function getData(url) {
-    let data = fetch(url, config)
+    let data = fetch(url)
     .then(response => {
       return response.json();
     })
@@ -50,7 +45,7 @@ export async function getDetailData(id) {
 
   let urlDetail = `${cors}${endpoint}${id}&authorization=${key}&output=json`;
 
-  let data = fetch(urlDetail, config)
+  let data = fetch(urlDetail)
   .then(response => {
     return response.json();
   })
@@ -59,4 +54,29 @@ export async function getDetailData(id) {
   });  
 
   return data;
+}
+
+
+export function setBronURL(query) {
+  const cors = 'http://obaliquid.staging.aquabrowser.nl/onderwijs/api/v1/search/?q=';
+  const middle = '+NOT+lom.lifecycle.contribute.publisher%3Dwikipedia';
+  const key = '8854ebaac6d5b76ab5a25a372d249680';
+
+  //URL instellen
+  let apiURL = `${cors}${query}&authorization=${key}&output=json`;
+  return apiURL;
+}
+
+
+//Get data
+export async function getBronData(url) {
+    let data = fetch(url)
+    .then(response => {
+      return response.json();
+    })
+    .catch(err => {
+      console.log(err);
+    });  
+
+    return data;
 }
