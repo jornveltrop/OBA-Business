@@ -5,6 +5,7 @@
 :root {
   --white: #fff;
   --blue: #0064C8;
+  --darkBlue: #0154a7;
   --darkGrey: #222222;
   --grey: #383838;
   --lightGrey: #878787;
@@ -400,4 +401,14 @@ article li div {
 article li:hover div {
   transition: all .4s ease-in-out;
   transform: scale(1.03);
+}
+
+
+.detail a {
+  transition: all .4s ease-in-out;
+}
+
+.detail a:hover {
+  transition: all .4s ease-in-out;
+  background-color: var(--darkBlue);
 }
