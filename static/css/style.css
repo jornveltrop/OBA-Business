@@ -170,7 +170,8 @@ form {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 1em;
+  max-width: 27em;
+  margin: 0 auto 1em auto;
 }
 
 form input {
@@ -210,7 +211,7 @@ article li {
 
 .row ul {
   list-style: none;
-  padding: 0 0 .5em 0;
+  padding: .5em .5em 1em .5em;
   display: flex;
   width: 100%;
   overflow-x: auto;
@@ -306,7 +307,7 @@ article li {
 
 .column ul {
   list-style: none;
-  padding: 0 0 4em 0;
+  padding: .5em .5em 4.5em .5em;
   display: flex;
   width: 100%;
   overflow-x: auto;
@@ -381,4 +382,22 @@ article li {
   background-color: transparent;
   width: 6.6em;
   height: 9em;
+}
+
+article ul {
+  padding: 1em;
+}
+
+article li {
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+article li div {
+  transition: all .4s ease-in-out;
+}
+
+article li:hover div {
+  transition: all .4s ease-in-out;
+  transform: scale(1.03);
 }
