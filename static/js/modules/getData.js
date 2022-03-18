@@ -13,7 +13,7 @@ export function setURL(query, article) {
   if (query == '') {
       console.log('test')
       query = 'Ondernemen';
-      h2Discover.textContent = 'Discover';
+      h2Discover.textContent = 'Ontdekken';
   }
 
   //URL instellen
