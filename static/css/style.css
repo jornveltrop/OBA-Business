@@ -307,6 +307,58 @@ article li {
   width: 100%;
   overflow-x: auto;
   gap: 1.5em 1em;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
+}
+
+.library span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.library span a {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--blue);
+  padding: .5em .7em;
+  border-radius: .8em;
+}
+
+.library header {
+  margin-bottom: 1em;
+}
+
+
+.loader {
+  width: 100%;
+  height: 70vh;
+  background: var(--darkGrey);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.loader div {
+  width: 4.5em;
+  height: 4.5em;
+  border: 9px solid #f3f3f3;
+  border-top: 10px solid var(--blue);
+  border-radius: 100%;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.loaderDisplay {
+  display: flex;
+}
+
+.loaderDisplay div {
+  animation: spin 1.5s infinite linear;
 }

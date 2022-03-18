@@ -2,6 +2,7 @@ import { getDetailID, renderData, renderDetailData, renderLibraryData } from './
 import { setURL, getData, getDetailData } from './getData.js'
 import { deleteResults, emptyField, hideDetail, hideLibrary, navToggle, showDetail, showLibrary, showSearch, hideSearch } from './ui.js'
 import './vendor/routie.min.js'
+import { setLoading, stopLoading } from './states.js'
 
 
 export function handleRoutes() {
@@ -9,11 +10,8 @@ export function handleRoutes() {
       {
       '': () => {
           deleteResults('discover');
+          setLoading();
           navToggle(1);
-          hideDetail();
-          hideLibrary();
-          hideSearch();
-
 
           let discoverField = '';
           let searchURL = setURL(discoverField, 'discover');
@@ -22,16 +20,21 @@ export function handleRoutes() {
           .then(data => {
             renderData(data, 'discover')
             .then(getDetailID('discover'))
+            .then(
+              stopLoading(),
+              hideDetail(),
+              hideLibrary(),
+              hideSearch()
+            )
           })
           .then(emptyField())
       },
       'library': () => {
-        showLibrary();
         deleteResults('library');
+        setLoading();
         navToggle(2);
         emptyField();
-        hideSearch();
-
+  
         let allFav = JSON.parse(localStorage.getItem('favorites')) || [];
         console.log(allFav);
         allFav.forEach(fav => {
@@ -39,14 +42,17 @@ export function handleRoutes() {
           .then(data => {
             renderLibraryData(data)
               .then(getDetailID('library'))
+              .then(
+                stopLoading(),
+                showLibrary(),
+                hideSearch()
+              )
           })
         });
       },
       'search/:query': query => {
           deleteResults('search');
-          hideDetail();
-          hideLibrary();
-          showSearch();
+          setLoading();
 
           let searchURL = setURL(query, 'search');
 
@@ -54,15 +60,25 @@ export function handleRoutes() {
           .then(data => {
             renderData(data, 'search')
               .then(getDetailID('search'))
+              .then(
+                stopLoading(),
+                hideDetail(),
+                hideLibrary(),
+                showSearch()
+              )
           })
           .then(emptyField())
       },
       'collection/:id': id => {
-          showDetail();
+          setLoading();
 
           getDetailData(id)
           .then(data => {
-            renderDetailData(data);
+            renderDetailData(data)
+            .then(
+              stopLoading(),
+              showDetail()
+            )
           })
       }
     })

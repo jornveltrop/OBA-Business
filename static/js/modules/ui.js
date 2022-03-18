@@ -92,3 +92,11 @@ export function setHash() {
 export function getHash() {
     return hash;
 }
+
+export function hideAll() {
+    form.classList.add('hidden');
+    home.classList.add('hidden');
+    detail.classList.add('hidden');
+    library.classList.add('hidden');
+    search.classList.add('hidden');
+}
