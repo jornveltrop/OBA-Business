@@ -192,6 +192,10 @@ form input::placeholder {
   color: var(--whiteGrey);
 }
 
+.home {
+  padding-bottom: 4em;
+}
+
 /*  ARTICLE's  */
 /*************/
 
@@ -204,7 +208,7 @@ article li {
   width: 7.7em;
 }
 
-.discover ul {
+.row ul {
   list-style: none;
   padding: 0 0 .5em 0;
   display: flex;
@@ -362,4 +366,19 @@ article li {
 
 .loaderDisplay div {
   animation: spin 1.5s infinite linear;
+}
+
+.video .book_img {
+  height: 7em;
+  width: 9em;
+}
+
+.video li {
+  width: auto;
+}
+
+.docs .book_img {
+  background-color: transparent;
+  width: 6.6em;
+  height: 9em;
 }
