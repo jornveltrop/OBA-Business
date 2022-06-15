@@ -46,7 +46,7 @@ De maker van deze app is: [*Jorn Veltrop*](https://github.com/jornveltrop)
 
 
 ## Contributing
-Als je wilt bijdragen aan deze app kun je dat doen door middel van een [Issue](https://github.com/jornveltrop/project-1-2021/issues).
+Als je wilt bijdragen aan deze app kun je dat doen door middel van een [Issue](https://github.com/jornveltrop/OBA-Business/issues).
 
 ## License
-Dit project valt onder de MIT [license](https://github.com/jornveltrop/project-1-2021/blob/main/LICENSE).
+Dit project valt onder de MIT [license](https://github.com/jornveltrop/OBA-Business/blob/main/LICENSE).
