@@ -10,7 +10,7 @@
   - [Contributing](#contributing)
   - [License](#license)
 
-## [Live demo](https://jornveltrop.github.io/project-1-2021/)
+## [Live demo](https://jornveltrop.github.io/OBA-Business/)
 
 
 ## About
