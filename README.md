@@ -14,7 +14,7 @@
 
 
 ## About
-**OBA Business is een native web applicatie waarmee ondernemers in de OBA catalogus kunnen zoeken en ontdekken gericht op ondernemen. Ook kunnen de items worden opgeslagen, zodat deze later nog een keer bekeken kunnen worden. Je kunt de items ook gemakkelijk reserveren in de app.**
+**OBA Business is een web applicatie waarmee ondernemers in de OBA catalogus kunnen zoeken en ontdekken gericht op ondernemen. Ook kunnen de items worden opgeslagen, zodat deze later nog een keer bekeken kunnen worden. Je kunt de items ook gemakkelijk reserveren in de app.**
 
 Deze web app maakt gebruik van de OBA API. Deze haalt op basis van een zoekopdracht items op uit hun database. 
 
