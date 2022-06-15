@@ -11,7 +11,7 @@
   - [License](#license)
 
 ## [Live demo](https://jornveltrop.github.io/OBA-Business/)
-
+Helaas werkt de API van de OBA niet meer, waardoor er geen data geladen kan worden.
 
 ## About
 **OBA Business is een web applicatie waarmee ondernemers in de OBA catalogus kunnen zoeken en ontdekken gericht op ondernemen. Ook kunnen de items worden opgeslagen, zodat deze later nog een keer bekeken kunnen worden. Je kunt de items ook gemakkelijk reserveren in de app.**
