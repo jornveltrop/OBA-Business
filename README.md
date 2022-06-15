@@ -35,7 +35,7 @@ Voor deze web app heb ik gebruik gemaakt van de OBA API. De documentatie van dez
 ## Installing
 Clone deze repository naar jouw lokale folder
 ```
-git clone https://github.com/jornveltrop/project-1-2021.git
+git clone https://github.com/jornveltrop/OBA-Business.git
 ```
 <br>
 
